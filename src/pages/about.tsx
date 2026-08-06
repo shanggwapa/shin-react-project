@@ -1,16 +1,70 @@
 import { Footer } from "@/components/common/footer";
 import { Header } from "@/components/common/header";
-
+import card1 from "../assets/card1.jpg";
 
 export default function AboutPage() {
   return (
     <>
       <Header />
-      <main>
-                <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">About Me</section>
-        
+
+      <main className="max-w-7xl mx-auto px-6 py-20">
+
+        <section className="grid md:grid-cols-2 gap-16 items-center">
+
+          {/* Left Side - Image */}
+          <div className="relative flex justify-center">
+            
+      
+            {/* Profile Image */}
+            <img
+              src={card1}
+              alt="Profile"
+              className="relative w-80 h-[420px] object-cover shadow-lg"
+            />
+          </div>
+
+          {/* Right Side */}
+          <div>
+
+            <h1 className="text-5xl font-bold uppercase">
+              About Me
+            </h1>
+
+            <div className="w-20 h-1 bg-black mt-4 mb-8"></div>
+
+            <p className="text-gray-600 leading-8 mb-8">
+              Hello! I'm a passionate Web Developer and Graphic Designer
+              who enjoys building responsive websites and creating modern,
+              user-friendly experiences.
+            </p>
+
+            <ul className="list-disc pl-6 space-y-4 text-gray-700">
+              <li>Responsive Website Development</li>
+              <li>React & TypeScript Applications</li>
+              <li>Landing Pages and Portfolio Websites</li>
+              <li>UI/UX Design and Graphic Design</li>
+              <li>Website Maintenance and Optimization</li>
+            </ul>
+
+            <h2 className="text-2xl font-semibold mt-10 mb-4">
+              Tools I Use
+            </h2>
+
+            <ul className="list-disc pl-6 space-y-3 text-gray-700">
+              <li>VS Code</li>
+              <li>Figma</li>
+              <li>GitHub</li>
+              <li>Photoshop</li>
+              <li>Canva</li>
+            </ul>
+
+          </div>
+
+        </section>
+
       </main>
+
       <Footer />
     </>
-  )
+  );
 }

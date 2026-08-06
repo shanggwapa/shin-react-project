@@ -16,6 +16,8 @@ export function Header() {
           <nav className="flex items-center space-x-6 sm:space-x-8">
             <NavLink to="/" className="text-sm font-medium text-purple-900 hover:text-gray-900 transition-colors">Home</NavLink>
             <NavLink to="/about" className="text-sm font-medium text-purple-900 hover:text-gray-900 transition-colors">About</NavLink>
+            <NavLink to="/about" className="text-sm font-medium text-purple-900 hover:text-gray-900 transition-colors">Works</NavLink>
+            <NavLink to="/about" className="text-sm font-medium text-purple-900 hover:text-gray-900 transition-colors">Contact</NavLink>
             
             {/* Contact Button */}
             <NavLink to="/contact">
