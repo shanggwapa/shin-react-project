@@ -7,26 +7,16 @@ export default function AboutPage() {
       <main className="max-w-7xl mx-auto px-6 py-20">
 
         <section className="grid md:grid-cols-2 gap-16 items-center">
-
-          {/* Left Side - Image */}
           <div className="relative flex justify-center">
-            
-      
-            {/* Profile Image */}
+
             <img
               src={card1}
               alt="Profile"
               className="relative w-80 h-[420px] object-cover shadow-lg"
             />
           </div>
-
-          {/* Right Side */}
           <div>
-
-            <h1 className="text-5xl font-bold uppercase">
-              About Me
-            </h1>
-
+            <h1 className="text-5xl font-bold uppercase">About Me</h1>
             <div className="w-20 h-1 bg-black mt-4 mb-8"></div>
 
             <p className="text-gray-600 leading-8 mb-8">
@@ -43,9 +33,7 @@ export default function AboutPage() {
               <li>Website Maintenance and Optimization</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold mt-10 mb-4">
-              Tools I Use
-            </h2>
+            <h2 className="text-2xl font-semibold mt-10 mb-4">Tools I Use</h2>
 
             <ul className="list-disc pl-6 space-y-3 text-gray-700">
               <li>VS Code</li>
